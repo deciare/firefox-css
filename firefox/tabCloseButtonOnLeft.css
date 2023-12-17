@@ -4,10 +4,10 @@
     margin-left: -4px;
     order: -1;
 }
-.tabbrowser-tab:hover .tab-close-button {
+.tabbrowser-tab:hover .tab-content:not([pinned]) .tab-close-button {
     display: inline-flex !important;
 }
-.tabbrowser-tab:hover .tab-icon-stack {
+.tabbrowser-tab:hover .tab-content:not([pinned]) .tab-icon-stack {
     display: none;
 }
 .tabbrowser-tab:hover .tab-content:not([pinned]) .tab-label-container {
