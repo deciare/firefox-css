@@ -7,16 +7,18 @@
   :root:not(:-moz-lwtheme) #navigator-toolbox {
     -moz-appearance: -moz-mac-source-list !important;
   }
+  :root:not(:-moz-lwtheme) #TabsToolbar {
+    background-color: light-dark(rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+  }
   :root:not(:-moz-lwtheme) #nav-bar {
     background-color: transparent !important;
-    border-top: 1px solid var(--toolbar-border-color);
   }
   :root:not(:-moz-lwtheme) #PersonalToolbar {
     background-color: transparent !important;
   }
 
-  /* Soften border separating toolbar icons preceding tab bar */
+  /* Invisible border separating toolbar icons preceding tab bar */
   :root:not(:-moz-lwtheme) #tabbrowser-tabs {
-    border-inline-start: 1px solid var(--toolbar-border-color) !important;
+    border-inline-start: 1px solid transparent !important;
   }
 }
