@@ -4,20 +4,20 @@
   }
 
   /** Mac vibrancy effect on toolbars */
-  #navigator-toolbox {
+  :root:not(:-moz-lwtheme) #navigator-toolbox {
     -moz-appearance: -moz-mac-source-list !important;
   }
-  #nav-bar {
+  :root:not(:-moz-lwtheme) #nav-bar {
     background-color: transparent !important;
     border-top: 1px solid var(--toolbar-border-color);
   }
-  #PersonalToolbar {
+  :root:not(:-moz-lwtheme) #PersonalToolbar {
     border-top: 1px solid var(--toolbar-border-color);
     background-color: transparent !important;
   }
 
   /* Soften border separating toolbar icons preceding tab bar */
-  #tabbrowser-tabs {
+  :root:not(:-moz-lwtheme) #tabbrowser-tabs {
     border-inline-start: 1px solid var(--toolbar-border-color) !important;
   }
 }
