@@ -12,7 +12,6 @@
     border-top: 1px solid var(--toolbar-border-color);
   }
   :root:not(:-moz-lwtheme) #PersonalToolbar {
-    border-top: 1px solid var(--toolbar-border-color);
     background-color: transparent !important;
   }
 
