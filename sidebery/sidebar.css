@@ -53,7 +53,7 @@
 		opacity: 0;
 	}
 	.Tab:hover .t-box {
-		mask: inherit !important;
+		mask: linear-gradient(-90deg,transparent,#000 8px,#000) !important;
 	}
 
 	/* don't show tab close button on pinned tabs */
