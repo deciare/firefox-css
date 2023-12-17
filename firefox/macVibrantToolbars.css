@@ -1,21 +1,23 @@
-:root {
-  --toolbar-border-color: color-mix(in srgb, currentColor 15%, transparent);
-}
+@media(-moz-platform: macos) {
+  :root {
+    --toolbar-border-color: color-mix(in srgb, currentColor 15%, transparent);
+  }
 
-/** Mac vibrancy effect on toolbars */
-#navigator-toolbox {
-  -moz-appearance: -moz-mac-source-list !important;
-}
-#nav-bar {
-  background-color: transparent !important;
-  border-top: 1px solid var(--toolbar-border-color);
-}
-#PersonalToolbar {
-  border-top: 1px solid var(--toolbar-border-color);
-  background-color: transparent !important;
-}
+  /** Mac vibrancy effect on toolbars */
+  #navigator-toolbox {
+    -moz-appearance: -moz-mac-source-list !important;
+  }
+  #nav-bar {
+    background-color: transparent !important;
+    border-top: 1px solid var(--toolbar-border-color);
+  }
+  #PersonalToolbar {
+    border-top: 1px solid var(--toolbar-border-color);
+    background-color: transparent !important;
+  }
 
-/* Soften border separating toolbar icons preceding tab bar */
-#tabbrowser-tabs {
-  border-inline-start: 1px solid var(--toolbar-border-color) !important;
+  /* Soften border separating toolbar icons preceding tab bar */
+  #tabbrowser-tabs {
+    border-inline-start: 1px solid var(--toolbar-border-color) !important;
+  }
 }
