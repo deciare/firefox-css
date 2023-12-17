@@ -6,10 +6,3 @@
     --autohide-sidebar-extended: 240px; /* width of panel extended */
     --autohide-sidebar-collapsed: 40px; /* width of panel collapsed */
 }
-
-/* Don't show sidebar header when current sidebar is Sidebery */
-#main-window:not([extradragspace="true"])
-    #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])
-    #sidebar-header {
-  display: none;
-}
