@@ -27,6 +27,16 @@
 	margin-left: var(--tabs-title-shift);
 }
 
+/* tab close button in "always" mode should be hidden unless sidebar is expanded */
+#root[data-tabs-close-btn="always"] {
+	.Tab .close {
+		display: none;
+	}
+	.ScrollBox:hover .Tab .close {
+		display: block;
+	}
+}
+
 /* move tab close button to left side in "hover" mode */
 #root[data-tabs-close-btn="hover"] {
 	&#root[data-density="loose"] .Tab:hover .close {
