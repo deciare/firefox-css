@@ -1,0 +1,16 @@
+/* Tab close button on left */
+.tab-close-button {
+    display: none;
+    margin-left: -4px;
+    order: -1;
+}
+.tabbrowser-tab:hover .tab-close-button {
+    display: inline-flex !important;
+}
+.tabbrowser-tab:hover .tab-icon-stack {
+    display: none;
+}
+.tabbrowser-tab:hover .tab-label-container {
+    margin-left: 5.5px;
+    mask-image: linear-gradient(to left, transparent, black calc(var(--tab-label-mask-size) + 11px)) !important;
+}

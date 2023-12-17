@@ -1,9 +1,10 @@
-@import url(hacks/sideberyModsLEFT.css);
+@import url(firefox/sideberyModsLEFT.css);
+@import url(firefox/tabCloseButtonOnLeft.css);
 
 /* sideberyModsLEFT.css variables */
 :root {
     --autohide-sidebar-extended: 240px; /* width of panel extended */
-    --autohide-sidebar-collapsed: 36px; /* width of panel collapsed */
+    --autohide-sidebar-collapsed: 40px; /* width of panel collapsed */
 }
 
 /* Don't show sidebar header when current sidebar is Sidebery */
@@ -11,21 +12,4 @@
     #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden])
     #sidebar-header {
   display: none;
-}
-
-/* Tab close button on left */
-.tab-close-button {
-    display: none;
-    margin-left: -4px;
-    order: -1;
-}
-.tabbrowser-tab:hover .tab-close-button {
-    display: inline-flex !important;
-}
-.tabbrowser-tab:hover .tab-icon-stack {
-    display: none;
-}
-.tabbrowser-tab:hover .tab-label-container {
-    margin-left: 5.5px;
-    mask-image: linear-gradient(to left, transparent, black calc(var(--tab-label-mask-size) + 11px)) !important;
 }
