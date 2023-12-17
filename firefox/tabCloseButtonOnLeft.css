@@ -10,7 +10,7 @@
 .tabbrowser-tab:hover .tab-icon-stack {
     display: none;
 }
-.tabbrowser-tab:hover .tab-label-container {
+.tabbrowser-tab:hover .tab-content:not([pinned]) .tab-label-container {
     margin-left: 5.5px;
     mask-image: linear-gradient(to left, transparent, black calc(var(--tab-label-mask-size) + 11px)) !important;
 }
