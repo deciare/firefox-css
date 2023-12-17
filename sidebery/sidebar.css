@@ -15,7 +15,9 @@
 /* ----------- Tab title styles ----------- */
 
 /* tabs indent when hovering over sidebar. Useful when using the left sidebar variant */
-.ScrollBox:not(:hover) {--tabs-indent: 0px;}
+.ScrollBox:not(:hover) {
+	--tabs-indent: 0px;
+}
 
 /* Tab title and favicon recentring. */
 #root[data-density="loose"] .Tab .fav > .fav-icon {
@@ -25,26 +27,32 @@
 	margin-left: var(--tabs-title-shift);
 }
 
-/* tab close button on left */
-#root[data-density="loose"] .Tab .close {
-  left: calc(var(--tabs-close-btn-margin) + calc(var(--tabs-favicon-shift) / 2));
-}
-.Tab .close {
-  left: var(--tabs-close-btn-margin);
-  right: auto;
-}
-.Tab .fav > .fav-icon {
-  transition: opacity 0s;
-}
-.Tab:hover .fav > .fav-icon {
-  opacity: 0;
-}
-/* don't show tab close button on pinned tabs */
-.PinnedTabsBar .Tab .close {
-  display: none;
-}
-.PinnedTabsBar .Tab:hover .fav > .fav-icon {
-  opacity: inherit;
+/* move tab close button to left side in "hover" mode */
+#root[data-tabs-close-btn="hover"] {
+	&#root[data-density="loose"] .Tab:hover .close {
+		left: calc(var(--tabs-close-btn-margin) + calc(var(--tabs-favicon-shift) / 2));
+	}
+	.Tab:hover .close {
+		left: var(--tabs-close-btn-margin);
+		right: auto;
+	}
+	.Tab .fav > .fav-icon {
+		transition: opacity 0s;
+	}
+	.Tab:hover .fav > .fav-icon {
+		opacity: 0;
+	}
+	.Tab:hover .t-box {
+		mask: inherit !important;
+	}
+
+	/* don't show tab close button on pinned tabs */
+	.PinnedTabsBar .Tab .close {
+		display: none;
+	}
+	.PinnedTabsBar .Tab:hover .fav > .fav-icon {
+		opacity: inherit;
+	}
 }
 
 /* tab title marquee scrolling */
