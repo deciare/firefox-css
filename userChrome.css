@@ -1,9 +1,9 @@
 @import url(firefox/macVibrantToolbars.css);
-@import url(firefox/sideberyModsLEFT.css);
+@import url(firefox/sideberyMods.css);
 @import url(firefox/tabCloseButtonOnLeft.css);
 
 /* sideberyModsLEFT.css variables */
 :root {
   --autohide-sidebar-extended: 240px; /* width of panel extended */
-  --autohide-sidebar-collapsed: 40px; /* width of panel collapsed */
+  --autohide-sidebar-collapsed: 42px; /* width of panel collapsed */
 }
