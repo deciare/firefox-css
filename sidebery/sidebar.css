@@ -39,6 +39,13 @@
 .Tab:hover .fav > .fav-icon {
   opacity: 0;
 }
+/* don't show tab close button on pinned tabs */
+.PinnedTabsBar .Tab .close {
+  display: none;
+}
+.PinnedTabsBar .Tab:hover .fav > .fav-icon {
+  opacity: inherit;
+}
 
 /* tab title marquee scrolling */
 /*.Tab .title {
