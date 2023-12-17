@@ -46,14 +46,34 @@
 		left: var(--tabs-close-btn-margin);
 		right: auto;
 	}
-	.Tab .fav > .fav-icon {
-		transition: opacity 0s;
-	}
-	.Tab:hover .fav > .fav-icon {
-		opacity: 0;
-	}
 	.Tab:hover .t-box {
 		mask: linear-gradient(-90deg,transparent,#000 8px,#000) !important;
+	}
+
+	/* for group tabs, shift favicon to the right to avoid being overlapped by close button */
+	&#root[data-density="loose"] .Tab[data-group="true"] {
+		&:hover .fav {
+			margin-left: calc(var(--tabs-close-btn-margin) * 2 + var(--tabs-favicon-shift) + 18px);
+		}
+	}
+	.Tab[data-group="true"] {
+		.fav {
+			transition: all 0.2s ease;
+		}
+
+		&:hover .fav {
+			margin-left: calc(var(--tabs-close-btn-margin) * 2 + 18px);
+		}
+	}
+
+	/* for regular tabs, replace favicon with close button */
+	.Tab[data-group="false"] {
+		.fav > .fav-icon {
+			transition: opacity 0s;
+		}
+		&:hover .fav > .fav-icon {
+			opacity: 0;
+		}
 	}
 
 	/* don't show tab close button on pinned tabs */
