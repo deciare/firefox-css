@@ -11,3 +11,9 @@
 #main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden]):hover {
   width: var(--autohide-sidebar-extended) !important;
 }
+
+/* adjust if your sidebery is not tall enough */
+#main-window:not([extradragspace="true"])[inFullscreen] #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"],
+#main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] {
+  height: 100%;
+}
