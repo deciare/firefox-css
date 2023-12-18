@@ -1,16 +1,7 @@
+#root.root {--tabs-activated-bg: rgba(128,128,128,.25);}
 #root.root {--tabs-font: 0.8rem sans-serif;}
 #root[data-density="loose"].root {--tabs-favicon-shift: 3px;}
 #root[data-density="loose"].root {--tabs-title-shift: 4px;}
-/*
-#root.root {--ctx-menu-fg: whitesmoke;}
-#root.root {--tabs-activated-shadow: 0 1px 4px -1px rgba(0,0,0,0.282), inset 0 0 0 1px rgba(255,255,255,0.031);}
-#root.root {--tabs-lvl-opacity: 0.16;}
-#root.root {--ctx-menu-shadow: 0 0 0 1px rgba(255,255,255,0.086), 0 1px 16px 0 rgba(0,0,0,0.282);}
-#root.root {--ctx-menu-separator: black;}
-#root.root {--ctx-menu-font: 1rem JetBrains Mono;}
-#root.root {--ctx-menu-border-radius: 5px;}
-#root.root {--status-notice: #00e9fb;}
-*/
 
 /* ----------- Tab title styles ----------- */
 
@@ -95,7 +86,7 @@
 }*/
 
 /* moves container indicator to the left */
-/*.Tab .ctx { left: 1px; }*/
+.Tab .ctx { left: 1px; }
 
 /*.Tab[data-discarded="true"] .title { 
   text-decoration: line-through; 
