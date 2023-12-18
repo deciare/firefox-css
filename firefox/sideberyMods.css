@@ -42,7 +42,3 @@
 #main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden]) #sidebar-header {
   display: none;
 }
-
-#main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar {
-  -moz-appearance: -moz-mac-source-list;
-}
