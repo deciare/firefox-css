@@ -86,8 +86,9 @@
 		}
 	}
 
-	/* for regular tabs, replace favicon with close button */
+	/* Replace favicon with close button */
 	.Tab[data-parent="false"] {
+	/* .Tab { */
 		.fav > .fav-icon {
 			transition: opacity 0s;
 		}
@@ -96,7 +97,7 @@
 		}
 	}
 
-	/* don't show tab close button on pinned tabs */
+	/* Don't show tab close button on pinned tabs */
 	.PinnedTabsBar .Tab .close {
 		display: none;
 	}
@@ -104,6 +105,24 @@
 		opacity: inherit;
 	}
 }
+
+
+/* ----------- Expansion toggle beside tab ----------- */
+
+/* #root.root:hover .AnimatedTabList {
+	margin-left: 16px;
+}
+.AnimatedTabList {
+	transition: margin-left 0.2s ease;
+}
+
+#root[data-density="loose"] .Tab .exp {
+	left: calc(var(--tabs-close-btn-margin) * -2 - var(--tabs-favicon-shift) - 18px);
+}
+.Tab .exp {
+	left: calc(var(--tabs-close-btn-margin) * -2 - 18px);
+	opacity: 1;
+} */
 
 /* ----------- Tab title marquee scrolling ----------- */
 
