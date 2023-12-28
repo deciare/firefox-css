@@ -1,6 +1,7 @@
 :root {
   --autohide-sidebar-extended: 230px; /* width of panel extended */
   --autohide-sidebar-collapsed: 34px; /* width of panel collapsed */
+  --autohide-sidebar-delay: 0.25s; /* how long to wait before hiding or unhiding sidebar */
 }
 
 /* --------Sidebery Auto-hiding Sidebar ----------- */
@@ -25,6 +26,7 @@
 #main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"] #sidebar {
   width: var(--autohide-sidebar-collapsed) !important;
   transition: all 0.2s ease-in-out;
+  transition-delay: var(--autohide-sidebar-delay);
 }
 /* width of tabs on hover */
 #main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:hover #sidebar {
