@@ -1,6 +1,6 @@
 # Deciare's Firefox CSS hacks
 
-A collection customisations to Firefox and Sidebery implemented via userChrome.css and Sidebery's built-in Style Editor.
+A collection customisations to Firefox and Sidebery implemented via userChrome.css and [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery/)'s built-in Style Editor.
 
 # Setting up userChrome.css
 
@@ -15,13 +15,20 @@ This repository is set up as a collection of modules that can be independently e
 @import url(firefox/tabCloseButtonOnLeft.css);
 ```
 
+## hideTabBar.css
+
+![Screenshot of hidden tab bar](assets/images/hideTabBar.png)
+
+Hides the tab bar. Best used with a vertical tabs extension such as [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery/) or [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/).
+
 ## macVibrantToolbars.css
 
 ![Screenshot of vibrant toolbars](assets/images/macVibrantToolbars.png)
 
 On macOS, enables a vibrancy effect on the tab toolbar, navigation bar, and bookmarks toolbar.
 
-Working as of Firefox 120.
+Works with Firefox 120.
+Broken as of Firefox 121; vibrancy was intentionally removed by developers (https://bugzilla.mozilla.org/show_bug.cgi?id=1861954).
 
 ## tabCloseButtonOnLeft.css
 
