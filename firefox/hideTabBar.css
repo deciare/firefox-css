@@ -1,10 +1,32 @@
+
+/* Hide most of the tab bar, but leave the alltabs-button alone */
+#titlebar {
+  max-height: 0;
+}
 #TabsToolbar {
-  display: none;
+  #tabbrowser-tabs,
+  .titlebar-buttonbox-container,
+  .titlebar-spacer {
+    display: none;
+  }
 }
 
+/* Make room for alltabs-button on navigation bar */
+#nav-bar-customization-target toolbarbutton:last-child:before {
+  content: "";
+  width: 40px;
+}
+#alltabs-button {
+  position: absolute;
+  right: 80px;
+  top: 3px;
+  z-index: 1;
+}
+
+/* Make titlebar buttons available on navigation bar */
 @media(-moz-platform: macos) {
   @media not (-moz-mac-rtl) {
-    :root[tabsintitlebar] #nav-bar:before {
+    #nav-bar:before {
       content: "";
       appearance: -moz-window-button-box;
       margin: -11px 20px 11px 11px;
