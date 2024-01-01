@@ -1,0 +1,31 @@
+#TabsToolbar {
+  display: none;
+}
+
+@media(-moz-platform: macos) {
+  @media not (-moz-mac-rtl) {
+    #nav-bar:before {
+      content: "";
+      appearance: -moz-window-button-box;
+      margin: -11px 20px 11px 11px;
+    }
+
+    :root[sizemode="fullscreen"] #nav-bar:before {
+      appearance: none;
+      margin: 0;
+    }
+  }
+
+  @media(-moz-mac-rtl) {
+    #nav-bar:after {
+      content: "";
+      appearance: -moz-window-button-box;
+      margin: -11px 11px 11px 20px;
+    }
+
+    :root[sizemode="fullscreen"] #nav-bar:after {
+      appearance: none;
+      margin: 0;
+    }
+  }
+}
