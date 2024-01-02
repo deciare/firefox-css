@@ -26,7 +26,7 @@
 /* Make titlebar buttons available on navigation bar */
 @media(-moz-platform: macos) {
   @media not (-moz-mac-rtl) {
-    #nav-bar:before {
+    :root[tabsintitlebar] #nav-bar:before {
       content: "";
       appearance: -moz-window-button-box;
       margin: -11px 20px 11px 11px;
