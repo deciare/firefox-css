@@ -12,7 +12,7 @@
 }
 
 /* Make room for alltabs-button on navigation bar */
-#nav-bar-customization-target toolbarbutton:last-child:before {
+#unified-extensions-button:before {
   content: "";
   width: 40px;
 }
