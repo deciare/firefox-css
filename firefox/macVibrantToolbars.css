@@ -3,18 +3,26 @@
     --toolbar-border-color: color-mix(in srgb, currentColor 15%, transparent);
   }
 
-  /** Mac vibrancy effect on toolbars */
-  :root:not(:-moz-lwtheme) #navigator-toolbox {
-    -moz-appearance: -moz-mac-source-list !important;
-  }
-  :root:not(:-moz-lwtheme) #TabsToolbar {
-    background-color: light-dark(rgba(0,0,0,0.05), rgba(0,0,0,0.15));
-  }
-  :root:not(:-moz-lwtheme) #nav-bar {
+  :root:not(:-moz-window-inactive)#main-window {
     background-color: transparent !important;
   }
-  :root:not(:-moz-lwtheme) #PersonalToolbar {
-    background-color: transparent !important;
+  
+  /** Mac vibrancy effect on toolbars and sidebar */
+  :root:not(:-moz-lwtheme) {
+    #navigator-toolbox,
+    #sidebar-box {
+      appearance: menupopup !important;
+      background-color: transparent !important;
+    }
+    
+    #TabsToolbar {
+      background-color: light-dark(rgba(0,0,0,0.05), rgba(0,0,0,0.15));
+    }
+
+    #nav-bar,
+    #PersonalToolbar {
+      background-color: transparent !important;   
+    }
   }
 
   /* Invisible border separating toolbar icons preceding tab bar */

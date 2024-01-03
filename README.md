@@ -27,8 +27,7 @@ Hides the tab bar. Best used with a vertical tabs extension such as [Sidebery](h
 
 On macOS, enables a vibrancy effect on the tab toolbar, navigation bar, and bookmarks toolbar.
 
-Works with Firefox 120.
-Broken as of Firefox 121; vibrancy was intentionally removed by developers (https://bugzilla.mozilla.org/show_bug.cgi?id=1861954).
+Working as of Firefox 121.
 
 ## tabCloseButtonOnLeft.css
 

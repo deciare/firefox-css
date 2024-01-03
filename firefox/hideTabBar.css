@@ -4,6 +4,8 @@
   max-height: 0;
 }
 #TabsToolbar {
+  background-color: transparent !important;
+
   #tabbrowser-tabs,
   .titlebar-buttonbox-container,
   .titlebar-spacer {
