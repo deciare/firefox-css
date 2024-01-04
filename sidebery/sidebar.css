@@ -134,7 +134,9 @@
 	margin-left: -10rem;
 }*/
 
-.Tab .audio {
+/* ----------- Audio icon overlapping favicon ----------- */
+
+/*.Tab .audio {
   top: 3px !important;
   left: 10px !important;
   filter: drop-shadow(0px 0px 1px black);
@@ -143,7 +145,7 @@
   top: 12px !important;
   left: 15px !important;
   filter: drop-shadow(0px 0px 1px black);
-}
+}*/
 
 /* ----------- Tab colors ----------- */
 :root { /* change colors as you like */
