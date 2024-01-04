@@ -7,4 +7,5 @@
 :root {
   --autohide-sidebar-extended: 240px; /* width of panel extended */
   --autohide-sidebar-collapsed: 42px; /* width of panel collapsed */
+  --autohide-sidebar-delay: 0; /* how long to wait before hiding or unhiding the sidebar */
 }
