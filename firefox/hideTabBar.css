@@ -13,7 +13,7 @@
 }
 
 /* Make room for alltabs-button on navigation bar */
-#nav-bar-customization-target:after {
+#PanelUI-button:before {
   content: "";
   width: 38px;
 }
