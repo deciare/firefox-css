@@ -10,6 +10,15 @@
 	--tabs-indent: 0px;
 }
 
+/* Don't show custom new tab buttons when collapsed */
+#root.root:not(:hover) .TabsPanel .new-tab-btn.-custom {
+	visibility: collapse;
+	opacity: 0;
+}
+#root.root:hover .TabsPanel .new-tab-btn.-custom {
+	transition: opacity 0.5s;
+}
+
 /* tab close button in "always" mode should be hidden unless sidebar is expanded */
 #root[data-tabs-close-btn="always"] {
 	.Tab .close {
