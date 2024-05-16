@@ -1,6 +1,7 @@
 /* Hide most of the tab bar, but leave the alltabs-button alone */
 #titlebar {
   max-height: 0;
+  z-index: 1;
 }
 #TabsToolbar {
   background-color: transparent !important;
@@ -21,7 +22,6 @@
   position: absolute;
   top: 3px;
   right: 40px;
-  z-index: 1;
 }
 
 /* Make titlebar buttons available on navigation bar */
