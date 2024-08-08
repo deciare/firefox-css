@@ -27,13 +27,13 @@ Working as of Firefox 126.
 
 ![Screenshot of vibrant toolbars](assets/images/macVibrantToolbars.png)
 
-On macOS, enables a vibrancy effect on the tab toolbar, navigation bar, and bookmarks toolbar.
+On macOS, enables a vibrancy effect on the tab toolbar, navigation bar, bookmarks toolbar, and sidebar. Vibrancy is not applied to extensions that add modules to the sidebar.
 
 You must also enable the following preferences in [about:config](about:config):
 - browser.theme.macos.native-theme
 - widget.macos.titlebar-blend-mode.behind-window
 
-Working as of Firefox 126.
+Working as of Firefox 129.
 
 ## tabCloseButtonOnLeft.css
 
