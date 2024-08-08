@@ -1,44 +1,19 @@
 @media(-moz-platform: macos) {
-  #sidebar-box {
-    appearance: -moz-window-titlebar !important;
+  :root {
+    --sidebar-background-color: transparent !important;
   }
   .browser-toolbar {
     background-color: transparent !important;
   }
-
-/* :root {
-    --toolbar-border-color: color-mix(in srgb, currentColor 15%, transparent);
-    --toolbox-non-lwt-bgcolor: transparent;
+  #sidebar-main {
+    appearance: -moz-window-titlebar !important;
   }
-
-  :root:not(:-moz-window-inactive){
-    &#main-window,
-    &#webextpanels-window {
-      background-color: transparent !important;
-    }
+  #sidebar-box {
+    appearance: -moz-window-titlebar !important;
   }
-
-  /* Mac vibrancy effect on toolbars and sidebar */
-/*  :root:not(:-moz-lwtheme) {
-    #navigator-toolbox,
-    #sidebar-box {
-      appearance: -moz-window-titlebar !important;
-      background-color: transparent !important;
-    }
-
-    #TabsToolbar {
-      background-color: light-dark(rgba(0,0,0,0.05), rgba(0,0,0,0.15));
-    }
-
-    #nav-bar,
-    #PersonalToolbar,
-    #webextpanels-window {
-      background-color: transparent !important;   
-    }
-  }
-
-  /* Invisible border separating toolbar icons preceding tab bar */
-/*  :root:not(:-moz-lwtheme) #tabbrowser-tabs {
-    border-inline-start: 1px solid transparent !important;
-  }*/
+/*   #webext-panels-browser {
+    backdrop-filter: blur(10px) !important;
+    background-color: rgba(0, 0, 0, 0.2);
+  } */
 }
+
