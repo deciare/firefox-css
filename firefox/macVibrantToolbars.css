@@ -1,6 +1,7 @@
 @media(-moz-platform: macos) {
   :root {
     --sidebar-background-color: transparent !important;
+    --toolbar-bgcolor: transparent !important;
   }
   .browser-toolbar {
     background-color: transparent !important;
