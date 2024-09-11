@@ -1,14 +1,17 @@
 /* Tab close button on left */
-.tab-close-button {
-    display: none;
+.tabbrowser-tab .tab-close-button {
+    display: none !important;
     margin-left: -4px;
     order: -1;
 }
-.tabbrowser-tab:hover .tab-content:not([pinned]) .tab-close-button {
-    display: inline-flex !important;
-}
-.tabbrowser-tab:hover .tab-content:not([pinned]) .tab-icon-stack {
-    display: none;
+sidebar-main[expanded] #tabbrowser-tabs[orient="vertical"] .tabbrowser-tab:hover .tab-content:not([pinned]),
+#tabbrowser-tabs[orient="horizontal"] .tabbrowser-tab:hover .tab-content:not([pinned]) {
+    .tab-close-button {
+        display: inline-flex !important;
+    }
+    .tab-icon-stack {
+        display: none;
+    }
 }
 .tabbrowser-tab:hover .tab-content:not([pinned]) .tab-label-container {
     margin-left: 5.5px;

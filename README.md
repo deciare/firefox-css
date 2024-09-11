@@ -41,7 +41,9 @@ Working as of Firefox 129.
 
 Moves the tab close buttons to the left side of each tab. When the pointer hovers over a tab, the tab's favicon is replaced with a close button.
 
-Working as of Firefox 120.
+When in vertical tab mode, no close button will be shown when the sidebar is visible but collapsed.
+
+Working as of Firefox 131.
 
 ## sideberyMods.css
 
