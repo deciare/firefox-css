@@ -55,7 +55,7 @@ For this module to work well, see also **sidebery/sidebar.css**.
 
 Based on [Redundakitties/colorful-minimalist](https://github.com/Redundakitties/colorful-minimalist/).
 
-Working as of Firefox 120 and Sidebery 5.
+Working as of Firefox 132 and Sidebery 5.
 
 ## sideberyModsOnRight.css
 
