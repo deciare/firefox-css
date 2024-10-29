@@ -1,12 +1,12 @@
 /* Hide most of the tab bar, but leave the alltabs-button alone */
-#titlebar {
-  max-height: 0;
-  z-index: 1;
-}
 #TabsToolbar {
   background-color: transparent !important;
+  max-height: 0 !important;
+  min-height: 2px !important;
+  z-index: 1;
 
   #tabbrowser-tabs,
+  .tabs-toolbar,
   .titlebar-buttonbox-container,
   .titlebar-spacer {
     display: none;
@@ -20,7 +20,7 @@
 }
 #alltabs-button {
   position: absolute;
-  top: 3px;
+  top: 5px;
   right: 40px;
 }
 
