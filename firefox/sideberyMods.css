@@ -9,7 +9,7 @@
 #main-window:not([extradragspace="true"]) #sidebar-box[sidebarcommand="_3c078156-979c-498b-8990-85f7987dd929_-sidebar-action"]:not([hidden]) {
   width: var(--autohide-sidebar-collapsed) !important;
   min-width: unset !important;
-  z-index: 10;
+  z-index: 10 !important;
   transition: all 0.2s ease-in-out; /* doesn't do anything unless you uncomment lower bit of code */
 }
 
