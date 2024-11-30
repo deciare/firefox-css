@@ -1,19 +1,19 @@
 @media(-moz-platform: macos) {
-  :root {
+  :root:not([lwtheme]) {
     --sidebar-background-color: transparent !important;
     --toolbar-bgcolor: transparent !important;
   }
-  .browser-toolbar {
+  .browser-toolbar:not([lwtheme]) {
     background-color: transparent !important;
   }
-  #navigator-toolbox {
+  #navigator-toolbox:not([lwtheme]) {
     appearance: -moz-window-titlebar !important;
     background-color: transparent !important;
   }
-  #sidebar-main {
+  :not([lwtheme]) #sidebar-main {
     appearance: -moz-window-titlebar !important;
   }
-  #sidebar-box {
+  #sidebar-box:not([lwtheme]) {
     appearance: -moz-window-titlebar !important;
   }
 /*   #webext-panels-browser {
