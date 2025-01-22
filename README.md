@@ -21,7 +21,7 @@ This repository is set up as a collection of modules that can be independently e
 
 Hides the tab bar. Best used with a vertical tabs extension such as [Sidebery](https://addons.mozilla.org/en-US/firefox/addon/sidebery/) or [Tree Style Tab](https://addons.mozilla.org/en-US/firefox/addon/tree-style-tab/).
 
-Working as of Firefox 126.
+Working as of Firefox 135.
 
 ## macVibrantToolbars.css
 

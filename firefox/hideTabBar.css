@@ -27,10 +27,10 @@
 /* Make titlebar buttons available on navigation bar */
 @media(-moz-platform: macos) {
   @media not (-moz-mac-rtl) {
-    :root[tabsintitlebar] #nav-bar:before {
+    #nav-bar:not(.browser-titlebar):before {
       content: "";
       appearance: -moz-window-button-box;
-      margin: -11px 20px 11px 11px;
+      margin: -11px 0 11px 11px;
     }
 
     :root[sizemode="fullscreen"] #nav-bar:before {
@@ -40,10 +40,10 @@
   }
 
   @media(-moz-mac-rtl) {
-    :root[tabsintitlebar] #nav-bar:after {
+    #nav-bar:not(.browser-titlebar):after {
       content: "";
       appearance: -moz-window-button-box;
-      margin: -11px 11px 11px 20px;
+      margin: -11px 11px 11px 0;
     }
 
     :root[sizemode="fullscreen"] #nav-bar:after {
