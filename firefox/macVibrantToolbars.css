@@ -1,7 +1,9 @@
 @media(-moz-platform: macos) {
   :root:not([lwtheme]) {
-    --sidebar-background-color: transparent !important;
+    --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
     --toolbar-bgcolor: transparent !important;
+    --toolbox-bgcolor: transparent !important;
+    --toolbox-bgcolor-inactive: transparent !important;
   }
   .browser-toolbar:not([lwtheme]) {
     background-color: transparent !important;
@@ -13,6 +15,7 @@
   :not([lwtheme]) #sidebar-main {
     appearance: -moz-window-titlebar !important;
   }
+  #sidebar-main:not([lwtheme]),
   #sidebar-box:not([lwtheme]) {
     appearance: -moz-window-titlebar !important;
   }

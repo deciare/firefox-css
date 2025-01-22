@@ -33,7 +33,7 @@ You must also enable the following preferences in [about:config](about:config):
 - browser.theme.macos.native-theme
 - widget.macos.titlebar-blend-mode.behind-window
 
-Working as of Firefox 129.
+Working as of Firefox 135.
 
 ## tabCloseButtonOnLeft.css
 
