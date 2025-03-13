@@ -1,8 +1,6 @@
 @media(-moz-platform: macos) {
   :root:not([lwtheme]) {
-    --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
     --toolbar-bgcolor: transparent !important;
-    --toolbox-bgcolor: transparent !important;
     --toolbox-bgcolor-inactive: transparent !important;
   }
   .browser-toolbar:not([lwtheme]) {
@@ -19,9 +17,14 @@
   #sidebar-box:not([lwtheme]) {
     appearance: -moz-window-titlebar !important;
   }
+  #sidebar-wrapper:not([lwtheme]) {
+    &:not(.expandOnHover) {
+      --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
+      --toolbox-bgcolor: transparent !important;
+    }
+  }
 /*   #webext-panels-browser {
     backdrop-filter: blur(10px) !important;
     background-color: rgba(0, 0, 0, 0.2);
   } */
 }
-
