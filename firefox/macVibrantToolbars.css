@@ -2,27 +2,26 @@
   :root:not([lwtheme]) {
     --toolbar-bgcolor: transparent !important;
     --toolbox-bgcolor-inactive: transparent !important;
-  }
-  .browser-toolbar:not([lwtheme]) {
-    background-color: transparent !important;
-  }
-  #navigator-toolbox:not([lwtheme]) {
-    appearance: -moz-window-titlebar !important;
-    background-color: transparent !important;
-  }
-  :not([lwtheme]) #sidebar-main {
-    appearance: -moz-window-titlebar !important;
-  }
-  #sidebar-main:not([lwtheme]),
-  #sidebar-box:not([lwtheme]) {
-    appearance: -moz-window-titlebar !important;
-  }
-  #sidebar-wrapper:not([lwtheme]) {
-    &:not(.expandOnHover) {
-      --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
-      --toolbox-bgcolor: transparent !important;
+
+    .browser-toolbar {
+      background-color: transparent !important;
     }
-  }
+
+    #navigator-toolbox {
+      appearance: -moz-window-titlebar !important;
+      background-color: transparent !important;
+    }
+    #sidebar-main,
+    #sidebar-box {
+      appearance: -moz-window-titlebar !important;
+    }
+    #sidebar-wrapper {
+      &:not(.expandOnHover) {
+        --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
+        --toolbox-bgcolor: transparent !important;
+      }
+    }
+}
 /*   #webext-panels-browser {
     backdrop-filter: blur(10px) !important;
     background-color: rgba(0, 0, 0, 0.2);
