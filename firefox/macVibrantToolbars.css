@@ -11,19 +11,29 @@
       appearance: -moz-sidebar !important;
       background-color: transparent !important;
     }
-    #sidebar-main,
+    /* Sidebar strip (when sidebar.revamp enabled and expand-on-hover disabled) */
+    &:not([sidebar-expand-on-hover]) #sidebar-main,
+    /*
+     * Visible sidebar (when sidebar.revamp disabled).
+     * Expanded sidebar (when sidebar.revamp enabled).
+     */
     #sidebar-box {
       appearance: -moz-sidebar !important;
     }
+    /* Customize Sidebar wrapper */
     #sidebar {
-      &:not(.expandOnHover) {
-        --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
-        --toolbox-bgcolor: transparent !important;
+      --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
+    }
+
+    /* Styles that apply only when sidebar is set to expand on hover */
+    &[sidebar-expand-on-hover] {
+      #sidebar-main:not(:has(>[expanded])) {
+        appearance: -moz-sidebar !important;
       }
     }
+  }
 }
 /*   #webext-panels-browser {
     backdrop-filter: blur(10px) !important;
     background-color: rgba(0, 0, 0, 0.2);
   } */
-}
