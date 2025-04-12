@@ -15,7 +15,7 @@
     #sidebar-box {
       appearance: -moz-sidebar !important;
     }
-    #sidebar-wrapper {
+    #sidebar {
       &:not(.expandOnHover) {
         --sidebar-background-color: light-dark(rgba(0, 0, 0, 0.075), rgba(0, 0, 0, 0.25)) !important;
         --toolbox-bgcolor: transparent !important;
