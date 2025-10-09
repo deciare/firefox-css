@@ -4,7 +4,9 @@ A collection customisations to Firefox and Sidebery implemented via userChrome.c
 
 # Setting up userChrome.css
 
-Refer to https://www.reddit.com/r/FirefoxCSS/comments/73dvty/tutorial_how_to_create_and_livedebug_userchromecss/ for a guide on how to set up **userChrome.css** with live debugging.
+See https://support.mozilla.org/en-US/kb/contributors-guide-firefox-advanced-customization for instructions on enabling userChrome.css.
+
+If you want to do your own customisations, it may also be helpful to enable live debugging of the browser's stylesheets (including userChrome.css) by following the instructions at https://firefox-source-docs.mozilla.org/devtools-user/browser_toolbox/index.html.
 
 # Modules
 
