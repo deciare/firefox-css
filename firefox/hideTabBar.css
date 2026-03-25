@@ -14,14 +14,14 @@
 }
 
 /* Make room for alltabs-button on navigation bar */
-#PanelUI-button:before {
+#ai-window-toggle:before {
   content: "";
   width: 38px;
 }
 #alltabs-button {
   position: absolute;
   top: 5px;
-  right: 40px;
+  right: 80px;
 }
 
 /* Make titlebar buttons available on navigation bar */
