@@ -28,7 +28,16 @@
     /* Styles that apply only when sidebar is set to expand on hover */
     &[sidebar-expand-on-hover] {
       #sidebar-main:not(:has(>[expanded])) {
+/*       #sidebar-main { */
         appearance: -moz-sidebar !important;
+      }
+    }
+  }
+  
+  :root[lwtheme] {
+    &[sidebar-expand-on-hover] {
+      #sidebar-main {
+        background-color: transparent !important;
       }
     }
   }
