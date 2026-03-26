@@ -14,7 +14,8 @@
 }
 
 /* Make room for alltabs-button on navigation bar */
-#ai-window-toggle:before {
+#ai-window-toggle:before,
+.private-browsing-indicator-with-label:before {
   content: "";
   width: 38px;
 }
