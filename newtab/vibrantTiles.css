@@ -1,0 +1,13 @@
+@-moz-document url(about:home), url(about:newtab) {
+	body {
+		-moz-osx-font-smoothing: auto !important;
+	}
+	
+	.ds-card-grid .sections-card-ui,
+	.search-handoff-button,
+	.top-site-outer .tile,
+	.weather-widget {
+		background-color: rgb(from var(--newtab-background-card) r g b / 0.25) !important;
+		backdrop-filter: blur(10px);
+	}
+}
